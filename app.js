@@ -10,8 +10,8 @@ app.use(session({ secret: 'secret', resave: false, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
 
-passport.serializeUser((user, done) => done(null, user));
-passport.deserializeUser((user, done) => done(null, user));
+passport.serializeUser(function(user, done) { done(null, user); });
+passport.deserializeUser(function(user, done) { done(null, user); });
 
 passport.use(new SamlStrategy({
     path: "/login/callback",
@@ -24,8 +24,8 @@ passport.use(new SamlStrategy({
   }
 ));
 
-app.get('/', (req, res) => {
-  if (!req.isAuthenticated()) {
+app.get('/', function(req, res) {
+  if (!req.isAuthenticated || !req.isAuthenticated()) {
     return res.redirect('/login');
   }
   res.send("Authenticated via SAML\n" + JSON.stringify(req.user, null, 2));
@@ -42,6 +42,6 @@ app.post('/login/callback',
   }
 );
 
-app.listen(3000, () => {
-  console.log("App running on http://sso.lab.example.com:3000");
+app.listen(3000, function() {
+  console.log("App running on http://workstation.lab.example.com:3000");
 });
