@@ -1,0 +1,78 @@
+{
+  "clientId": "saml-demo-app",
+  "name": "saml-demo-app",
+  "description": "",
+  "rootUrl": "http://workstation.lab.example.com:3000",
+  "adminUrl": "http://workstation.lab.example.com:3000/login/callback",
+  "baseUrl": "",
+  "surrogateAuthRequired": false,
+  "enabled": true,
+  "alwaysDisplayInConsole": false,
+  "clientAuthenticatorType": "client-secret",
+  "redirectUris": [
+    "http://workstation.lab.example.com:3000/login/callback"
+  ],
+  "webOrigins": [
+    "http://workstation.lab.example.com:3000"
+  ],
+  "notBefore": 0,
+  "bearerOnly": false,
+  "consentRequired": false,
+  "standardFlowEnabled": true,
+  "implicitFlowEnabled": false,
+  "directAccessGrantsEnabled": true,
+  "serviceAccountsEnabled": false,
+  "publicClient": true,
+  "frontchannelLogout": true,
+  "protocol": "saml",
+  "attributes": {
+    "saml.assertion.signature": "false",
+    "saml.force.post.binding": "true",
+    "saml.server.signature": "true",
+    "saml.server.signature.keyinfo.ext": "false",
+    "saml.signing.certificate": "MIICqTCCAZECBgGdapQJUzANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1zYW1sLWRlbW8tYXBwMB4XDTI2MDQwODAwNTExOVoXDTM2MDQwODAwNTI1OVowGDEWMBQGA1UEAwwNc2FtbC1kZW1vLWFwcDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKyfun7dYbChbfTPU1C6cCscMY0QEnpsxvkOv/V2fwq5TcwQAUH/OoMQ1QNvRZBJzpO6FnB+9jTDhkm9//vsRgHds3fnSFz3OFkuZPmWjum8Xonpx/cJ9iWL/+ngf6A0mMzC2wGl5op/VhgsLD7eJJw3ctQg3GiZKNHItD6dcsREMG2F9cok2iZ66EyniiioXt7vsP6NDM/1OtD53V5b4WnmbRmzGxsu6VfGGX4BxI/VQSpIsQ0Ue7cgRsk3DZU1NHxgZouNoRUFxkG7MLAx6nkX118AXV3anf9HAswmE8L20VIf6uXD6apyt6QG1MltWCCnZeNUYpMDiVt7+ShuyW8CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAmzt/HCHaxEWG+IEHwyhy5NE87wZOVytC9I7btm3u4Odr2gSYqeuMpU1ThDoxuheYPmlhYAliq+6rp4rXUkMgwBffg2c4+Xg6E8W3H5G5QdvcpEddt5S2KAPndMDNSFhEX7tuF2tcItuvsf8oCspotiBk2Dy2htHqi748D1RNnN1LtIho56ujx+Ei3BA6zVJdh8o5rdH4FWNrW0IxGi9dc64aQPY+dgqsmKo34tLKe8xhWt7EhiTXf1g3Cg0dOXFqQ5EVsW6lI9v8AtEmLDWE6AlsmXhozaKN0JrbjuXx2GT1O/dKzxpb20kEt/tWHSKDkUG6yfeak9XzLka4vsyYhw==",
+    "saml.artifact.binding.identifier": "9VYABpxdpvgYJD7lv4X1tSZkYNw=",
+    "saml.artifact.binding": "false",
+    "saml.signature.algorithm": "RSA_SHA256",
+    "saml_force_name_id_format": "false",
+    "saml.client.signature": "true",
+    "saml.authnstatement": "true",
+    "display.on.consent.screen": "false",
+    "saml_name_id_format": "username",
+    "saml.signing.private.key": "MIIEowIBAAKCAQEArJ+6ft1hsKFt9M9TULpwKxwxjRASemzG+Q6/9XZ/CrlNzBABQf86gxDVA29FkEnOk7oWcH72NMOGSb3/++xGAd2zd+dIXPc4WS5k+ZaO6bxeienH9wn2JYv/6eB/oDSYzMLbAaXmin9WGCwsPt4knDdy1CDcaJko0ci0Pp1yxEQwbYX1yiTaJnroTKeKKKhe3u+w/o0Mz/U60PndXlvhaeZtGbMbGy7pV8YZfgHEj9VBKkixDRR7tyBGyTcNlTU0fGBmi42hFQXGQbswsDHqeRfXXwBdXdqd/0cCzCYTwvbRUh/q5cPpqnK3pAbUyW1YIKdl41RikwOJW3v5KG7JbwIDAQABAoIBADGjOIBUbkvZD4Iuv7ld8vUihUkXzwhvEQP67s3JhhxyTmGYVJRCrPOVOntjWrBz2Lf38Y3lpCxl8M5xmRM6zKKqunmHAvLgj85tHdH7Lhsd9F1Z4QszTRlc2XjJ+kj59toiSdF+f/1hQkNvKEXnoMVe2GERFe/p4qf4O4QpyB+RNwWZpKdFkAN4/eLCpqadb5PZ9Dlpt1r9x9qQqtigUT+LxrvoLP1vVcqq0jPPe18w4n1BQNnYCNbEjFxQj9DzWV1h3BNGHU4vzPyZroaW//BOtX2s559v4rNXIRsv/2VFarcxeFwG0WUVX/0/n20rwnn5nguzUuiNGvSPrCb/C2ECgYEA3Kn9z9jSR8Ez7broNanUjGZS+XtPna+xlgW2aWSHobmKXdA4ynog1devSm/LgKMCcvaQgYXTsm2ZjKWypmWGIBr12Df+TcWP46PlduGC3KlyTzeRcVtp+02ltWWXi4IAsLcyUYEezyZTEt6vMb2Iq1NdIE3GqPJC+1mp+F2ZWpECgYEAyERbtbjju2Sm/Tw5wvl+jLJ9EF0p1bTj9OIv4sDoZXSnxqQyQ57WF2KvFEz9gb0xVK/NyJjjJxBREQpqAbCA5s7kBbt+Cb8HUY5FgtBHllFQxGxbDqwr5WQGLMCzvvD6eX5wWytbTovNTpURejNeB7oDLw6IPgYzeQYJXSTv4/8CgYALOAlTe+6U/1moiIwtzkikKr+lN4PAvKIGwpuXmCjdLBXA10lL4hGxTZn36t8p1x/UwHxwWWF9/NyFrhb7JsY+85/0MkSXp6e9JyQPez+wAF1zcZvPa5pj0HrQUi32RdHLKkVAp5PtbEFlADVgDgbYzxA5CDtFc6u8I77khb26QQKBgBEcxjlg8xSwJRS+cLEYYJflKIqda1W3f0MNkMnvcew5a5ytqx3cFK8q34r8iSzs3ao+23aomcBcxJCQMz6xtlICm7lhrANpL1bosUfcREGz8RLXr3Axhg6z3VM1pCZMsRpwk2k26zZq+8AbPMMUYJSIcH004K9sGDnfKi2rWlRBAoGBAMFn457UrCo3tWelEm08DaWhH2xBXb0OlXHSryd/5d9DAejumvTxhCwZ4Ev+2n+/g6quN6sq1yztNwh6QAWJhKKeP7Hd8ZACm7405yoCVqEvBU00qItLJPYeJ/pFZeTUnhcxd2qZdanqG6mT6O8LeZmCzbkeSi01j/SFc1uZBWkU",
+    "saml.allow.ecp.flow": "false",
+    "saml.onetimeuse.condition": "false",
+    "saml.server.signature.keyinfo.xmlSigKeyInfoKeyNameTransformer": "NONE",
+    "saml_signature_canonicalization_method": "http://www.w3.org/2001/10/xml-exc-c14n#",
+    "saml_idp_initiated_sso_url_name": "",
+    "saml_idp_initiated_sso_relay_state": "",
+    "login_theme": "",
+    "saml.encrypt": "false",
+    "logoUri": "",
+    "policyUri": "",
+    "tosUri": "",
+    "saml_assertion_consumer_url_post": "",
+    "saml_assertion_consumer_url_redirect": "",
+    "saml_single_logout_service_url_post": "",
+    "saml_single_logout_service_url_redirect": "",
+    "saml_single_logout_service_url_soap": "",
+    "saml_single_logout_service_url_artifact": "",
+    "saml_artifact_binding_url": "",
+    "saml_artifact_resolution_service_url": "",
+    "saml.assertion.lifespan": ""
+  },
+  "authenticationFlowBindingOverrides": {
+    "browser": ""
+  },
+  "fullScopeAllowed": true,
+  "nodeReRegistrationTimeout": -1,
+  "defaultClientScopes": [
+    "role_list"
+  ],
+  "optionalClientScopes": [],
+  "access": {
+    "view": true,
+    "configure": true,
+    "manage": true
+  }
+}
