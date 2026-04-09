@@ -1,2 +1,0 @@
- npm install express@4.16 passport@0.4 passport-saml@2 express-session@1.15
- npm start
